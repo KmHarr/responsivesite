@@ -1,0 +1,149 @@
+:root{
+    --headercolor: #181818;
+}
+
+*{
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    
+}
+
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height: 100%;
+    font-family: sans-serif;
+    overflow:scroll;
+}
+
+header{
+    justify-content: space-between;
+    border-bottom: 1px solid lavenderblush;
+    background-color: var(--headercolor);
+    color: white;
+    font-size: 16px;
+    height:65px;
+    /* box-shadow: 0 3px 3px 0 rgba(235, 235, 235, 0.4); */
+    z-index:20;
+}
+
+header nav{
+    margin-right:15px;
+    margin-top: 5px;
+}
+
+.header-logo{
+    margin-left: 25px;
+    margin-bottom: auto;
+    margin-top: auto;
+    color: lavender;
+}
+
+.nav-item{
+    margin: 0 4px 0 4px;
+}
+.navitems{
+    padding: 0;
+}
+.announcement{
+    background-color: var(--headercolor);
+    /* position:relative;
+    bottom:2px; */
+    color: white;
+    text-align: center;
+    text-wrap:wrap;
+}
+.announcement p{
+    margin:0;
+    padding:15px;
+}
+.main-section{
+    margin:0px auto;
+    max-width: 1280px;
+    overflow: hidden;
+}
+/* .banner-image{
+    height:5%;
+    width:1282%;
+    max-height:700px;
+    image-rendering: auto;
+} */
+.featured-section{
+    min-width: 100%;
+    overflow:scroll;
+}
+.featured-item .album-image{
+    width:200px;
+    height:200px;
+}
+
+.featured-item .album-info{
+    background-color:rgb(32, 32, 32);
+    color: azure;
+    position: relative;
+    bottom:4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px 0 rgba(54, 54, 54, 0.568);
+    max-width: 200px;
+    height:52px;
+}
+
+.featured-item .album-info .medium{
+    display:none;
+}
+
+.searchbar{
+    width:40%;
+    height:40px;
+    margin:auto;
+}
+
+.featured-section .items{
+    justify-content: space-evenly;
+    flex-wrap:unset;
+}
+
+
+.genre-section .items{
+    justify-content: space-around;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.genre-category{
+}
+.ai{
+    margin:0;
+    padding:0;
+}
+.flex{
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.hidden{
+    display: none;
+}
+
+@media (max-width:767px) {
+    .searchbar{
+        display: none;
+    }
+
+    .search{
+        display:flex;
+    }
+    
+}
+
+@media(max-width: 400px) {
+    .account{
+        display: none;
+    }
+}
